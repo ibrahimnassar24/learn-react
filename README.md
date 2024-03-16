@@ -1,5 +1,3 @@
-# Learn React
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-
+#React Router Dom
+This branch contains a project that helps with learning React Router Dom.
+This project was initially made by following the instructions on the official documentation page.
