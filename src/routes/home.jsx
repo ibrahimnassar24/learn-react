@@ -4,19 +4,27 @@ import show from "./show";
 import create from "./create";
 import destroy from "./destroy";
 import edit from "./edit";
-import index from "./index.jsx";
+import index from "./index";
+import ErrorPage from "../components/ErrorPage";
+import sign from "./sign";
+import welcome from "./welcome";
+
+
 
 
 export default {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     loader,
     children: [
         index,
         show,
         create,
         destroy,
-        edit        
+        edit,
+        sign,
+        welcome
     ]
 };
 

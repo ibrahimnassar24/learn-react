@@ -10,6 +10,9 @@ export default {
 
 async function loader({ params }) {
     const contact = await getContact(params.contactId);
+    if(!contact){
+        throw new Error("not found");
+    }
     return { contact };
 }
 
